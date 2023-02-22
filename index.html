@@ -7,194 +7,239 @@
     <title>Document</title>                                                                                                    <!-- todo Verifier le titre du document dans le guide-->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/34887bebd9.js" crossorigin="anonymous"></script>                                  <!-- !pour intégration icones JS autorisé ?  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>                                                                                                                   <!-- ? pas sur la même ligne?  -->
+        <div>                                                                                                                  <!-- ? pas sur la même ligne?  -->
             <img src="images\Images Booki\logo\Booki.png" alt="Booki" id="logo" />
             <nav>
-                <a class="nav_element" href="#">Hébergements</a>                                                                      
-                <a class="nav_element" href="#">Activités</a>                                                                        
+                <button class="nav_element" type="button">
+                    <a href="#section1">Hébergements</a>  
+                </button>
+                <button class="nav_element" type="button">                                                                    
+                    <a href="#section2">Activités</a>                                                                        
+                </button>    
             </nav>
         </div>
-        <main></main>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
         <div>
-            <i class="fa-solid fa-location-dot"></i>
+            <div>                                                                                                              <!-- ? utiliser button ?  -->
+                <i class="fa-solid fa-location-dot" id="ic_pin"></i>
+            </div>
             <form>
                 <input type="text" id="emplacement" value="Marseille, France">
             </form>
-            <button class="full blue" type="button">                                                                             <!-- todo créer le lien href=”#”-->
+            <button class="full_blue" type="button">                                                                           <!-- todo créer le lien href=”#”-->
                     <p>Recherche</p>
             </button>    
         </div>
         <span>
             <p>Filtres</p>
         </span>
-        <button class="favorite styled" type="button">
-            <i class="fa-solid fa-money-bill-wave"></i>
+        <button class="Filtre_btn" type="button">
+            <i class="fa-solid fa-money-bill-wave ic_blue"></i>
             <p>Économique</p>
         </button>
-        <button class="favorite styled" type="button">
-            <i class="fa-solid fa-person"></i>
+        <button class="Filtre_btn" type="button">
+            <i class="fa-solid fa-person ic_blue"></i>
             <p>Économique</p>
         </button>                                                                                                         
-        <button class="favorite styled" type="button">
-            <i class="fa-solid fa-heart"></i>
+        <button class="Filtre_btn" type="button">
+            <i class="fa-solid fa-heart ic_blue"></i>
             <p>Économique</p>
         </button>  
-        <button class="favorite styled" type="button">
-            <i class="fa-solid fa-dog"></i>
+        <button class="Filtre_btn" type="button">
+            <i class="fa-solid fa-dog ic_blue"></i>
             <p>Économique</p>
-        </button>
-        <div>
-            <i class="fa-solid fa-info"></i>
+        </button><br/>                                                                                                         <!-- ? utilité de br ?  -->    
+        <span>
+            <i class="fa-solid fa-info ic_blue"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>  
+        </span>  
     </header>
-    <section>
-        <article>
-            <h2>Hébergements à Marseille</h2>
-            <figure class="card_ébergements">                                                                                   <!-- ?  pas tu tout certain d'avoir utilisé la bonne balise ici --> 
-                <img src="images/Images Booki/hebergements/4_small/canebière.jpg" alt="" style="width:33%">                     <!-- * alt avec "" car légende en dessous ?> -->   
-                <figcaption class="container">
-                  <h3><b>Auberge La Canebière</b></h3>
-                  <p>Nuit à partir de 25€</p>
-                  <i class="fa-solid fa-star"></i>                                                                              <!-- ?  J'ai remarqué que les mettre à la suite sur la même ligne réduisait l'espace entre chaque element dans le navigateur --> 
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </figcaption>
-            </figure>
-            <figure class="card_ébergements">
-                <img src="images/Images Booki/hebergements/4_small/port.jpg" alt="Hôtel du port" style="width:33%">             <!-- todo  style="width:100%"> -->   
-                <figcaption class="container">
-                  <h3><b>Hôtel du port</b></h3>
-                  <p>Nuit à partir de 52€</p>
-                  <i class="fa-solid fa-star"></i>                                                                                                                   
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </figcaption>
-            </figure>
-            <figure class="card_ébergements">
-                <img src="images/Images Booki/hebergements/4_small/mouettes.jpg" alt="Hôtel Les mouettes" style="width:33%">     <!-- todo  style="width:100%"> -->   
-                <figcaption class="container">
-                  <h3><b>Hôtel Les mouettes</b></h3>
-                  <p>Nuit à partir de 76€</p>
-                  <i class="fa-solid fa-star"></i>                                                                                                                   
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i> 
-                  <i class="fa-solid fa-star"></i> 
-                </figcaption> 
-            </figure> 
-            <figure class="card_ébergements"> 
-                <img src="images/Images Booki/hebergements/4_small/mer.jpg" alt="Hôtel de la mer" style="width:3 3%">             <!-- todo  style="width:100%"> -->   
-                <figcaption class="container"> 
-                  <h3><b>Hôtel de la mer</b></h3> 
-                  <p>Nuit à partir de 46€</p> 
-                  <i class="fa-solid fa-star"></i>                                                                                                                  
-                  <i class="fa-solid fa-star"></i> 
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </figcaption>
-            </figure>
-            <figure class="card_ébergements">
-                <img src="images/Images Booki/hebergements/4_small/panier.jpg" alt="Auberge Le Panier" style="width:33%">        <!-- todo  style="width:100%"> -->   
-                <figcaption class="container">
-                  <h3><b>Auberge Le Panier</b></h3>
-                  <p>Nuit à partir de 23€</p>
-                  <i class="fa-solid fa-star"></i>                                                                                                                  
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </figcaption>
-            </figure>
-            <figure class="card_ébergements">
-                <img src="images/Images Booki/hebergements/4_small/amina.jpg" alt="Hôtel Chez Amina" style="width:33%">          <!-- todo  style="width:100%"> -->   
-                <figcaption class="container">
-                  <h3><b>Hôtel Chez Amina</b></h3>
-                  <p>Nuit à partir de 96€</p>
-                  <i class="fa-solid fa-star"></i>                                                                                                                
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </figcaption>
-            </figure>
-            <p>Afficher plus</p>
-        </article>
-        <article>
+    <main>
+        <section id ="section1">
+            <article class ="gig_card" id="big_card_2/3">
+                <h2>Hébergements à Marseille</h2>
+                <a href="#">
+                    <figure class="card_ébergements">                                                                              <!-- ?  pas tu tout certain d'avoir utilisé la bonne balise ici --> 
+                        <img src="images/Images Booki/hebergements/4_small/canebière.jpg" alt="" style="width:10%">                <!-- * alt avec "" car légende en dessous ? style pour meilleur lecture (à replacer)> -->   
+                        <figcaption class="container">
+                        <h3><b>Auberge La Canebière</b></h3>                                                                       <!-- ?  usage de <b> pas top? doit être géré en CSS?  --> 
+                        <p>Nuit à partir de 25€</p>
+                        <i class="fa-solid fa-star ic_blue ic_blue"></i>                                                           <!-- ?  J'ai remarqué que les mettre à la suite sur la même ligne réduisait l'espace entre chaque element dans le navigateur --> 
+                        <i class="fa-solid fa-star ic_blue ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue ic_blue"></i>
+                        <i class="fa-solid fa-star ic_grey"></i>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="card_ébergements">
+                        <img src="images/Images Booki/hebergements/4_small/port.jpg" alt="Hôtel du port" style="width:10%">        <!-- todo  style="width:100%"> -->   
+                        <figcaption class="container">
+                        <h3><b>Hôtel du port</b></h3>
+                        <p>Nuit à partir de 52€</p>
+                        <i class="fa-solid fa-star ic_blue"></i>                                                                                                                   
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_grey"></i>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="card_ébergements">
+                        <img src="images/Images Booki/hebergements/4_small/mouettes.jpg" alt="Hôtel Les mouettes" style="width:10%"><!-- todo  style="width:100%"> -->   
+                        <figcaption class="container">
+                        <h3><b>Hôtel Les mouettes</b></h3>
+                        <p>Nuit à partir de 76€</p>
+                        <i class="fa-solid fa-star ic_blue"></i>                                                                                                                   
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i> 
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_grey"></i> 
+                        </figcaption> 
+                    </figure>
+                </a>
+                <a href="#"> 
+                    <figure class="card_ébergements"> 
+                        <img src="images/Images Booki/hebergements/4_small/mer.jpg" alt="Hôtel de la mer" style="width:10%">      <!-- todo  style="width:100%"> -->   
+                        <figcaption class="container"> 
+                        <h3><b>Hôtel de la mer</b></h3> 
+                        <p>Nuit à partir de 46€</p> 
+                        <i class="fa-solid fa-star ic_blue"></i>                                                                                                                  
+                        <i class="fa-solid fa-star ic_blue"></i> 
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_grey"></i>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="card_ébergements">
+                        <img src="images/Images Booki/hebergements/4_small/panier.jpg" alt="Auberge Le Panier" style="width:10%">  <!-- todo  style="width:100%"> -->   
+                        <figcaption class="container">
+                        <h3><b>Auberge Le Panier</b></h3>
+                        <p>Nuit à partir de 23€</p>
+                        <i class="fa-solid fa-star ic_blue"></i>                                                                                                                  
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_grey"></i>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="card_ébergements">
+                        <img src="images/Images Booki/hebergements/4_small/amina.jpg" alt="Hôtel Chez Amina" style="width:10%">    <!-- todo  style="width:100%"> -->   
+                        <figcaption class="container">
+                        <h3><b>Hôtel Chez Amina</b></h3>
+                        <p>Nuit à partir de 96€</p>
+                        <i class="fa-solid fa-star ic_blue"></i>                                                                                                                
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_grey"></i>
+                        </figcaption>
+                    </figure>
+                </a>
+                <p>Afficher plus</p>
+            </article>
+            <article class ="gig_card" id="big_card_1/3">
+                <div>
+                    <h2>Les plus populaires</h2>
+                    <i class="fa-solid fa-chart-line ic_blue"></i>
+                </div>
+                <a href="#">
+                    <figure class="card_populaires">
+                        <img src="images/Images Booki/hebergements/4_small/matin.jpg" alt="Hôtel Le soleil du matin" style="width:10%"><!-- todo  style="width:100%"> -->   
+                        <figcaption class="container">
+                        <h3><b>Hôtel Le soleil du matin</b></h3>
+                        <p>Nuit à partir de 128€</p>
+                        <i class="fa-solid fa-star ic_blue"></i>                                                                                                                
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_grey"></i>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="card_populaires">
+                        <img src="images/Images Booki/hebergements/4_small/eau.jpg" alt="Chambres d’hôtes Au cœur de l’eau" style="width:10%"><!-- todo  style="width:100%"> -->   
+                        <figcaption class="container">
+                        <h3><b>Chambres d’hôtes Au cœur de l’eau</b></h3>
+                        <p>Nuit à partir de 71€</p>
+                        <i class="fa-solid fa-star ic_blue"></i>                                                                                                                
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_grey"></i>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">    
+                    <figure class="card_populaires">
+                        <img src="images/Images Booki/hebergements/4_small/blanc.jpg" alt="Hôtel Bleu et Blanc" style="width:10%"> <!-- todo  style="width:100%"> -->   
+                        <figcaption class="container">
+                        <h3><b>Hôtel Bleu et Blanc</b></h3>
+                        <p>Nuit à partir de 68€</p>
+                        <i class="fa-solid fa-star ic_blue"></i>                                                                                                                
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_blue"></i>
+                        <i class="fa-solid fa-star ic_grey"></i>
+                        </figcaption>
+                    </figure>
+                </a>
+            </article>
+        </section>
+        <section id ="section2">
+            <h2>Activités à Marseille</h2>                                                                                         <!-- *  L'usage de article ne m'a pas paru pertient ici"> -->
             <div>
-                <h2>Les plus populaires</h2>
-                <i class="fa-solid fa-chart-line"></i>
+                <a href="#">
+                    <figure class="card_activités">
+                        <img src="images\Images Booki\activites\3_medium/vieux-port.jpg" alt="Vieux-Port" style="width: 15%">      <!-- todo  style="width:100%"> -->   
+                        <figcaption class="container">
+                        <h3><b>Vieux-Port</b></h3>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="card_activités">
+                        <img src="images\Images Booki\activites\3_medium/pomègues.jpg" alt="Fort de Pomègues" style="width: 15%">  <!-- todo  style="width:100%"> -->   
+                        <figcaption class="container">
+                        <h3><b>Fort de Pomègues</b></h3>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="card_activités">
+                        <img src="images\Images Booki\activites\3_medium/Calanques.jpg" alt="Parc national des Calanques" style="width: 15%"><!-- todo  style="width:100%"> -->   
+                        <figcaption class="container">
+                        <h3><b>Parc national des Calanques</b></h3>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">    
+                    <figure class="card_activités">
+                        <img src="images\Images Booki\activites\3_medium/garde.jpg" alt="Notre-Dame-de-la-Garde" style="width: 15%"><!-- todo  style="width:100%"> -->   
+                        <figcaption class="container">
+                        <h3><b>Notre-Dame-de-la-Garde</b></h3>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
-            <figure class="card_populaires">
-                <img src="images/Images Booki/hebergements/4_small/matin.jpg" alt="Hôtel Le soleil du matin" style="width:33%">  <!-- todo  style="width:100%"> -->   
-                <figcaption class="container">
-                  <h3><b>Hôtel Le soleil du matin</b></h3>
-                  <p>Nuit à partir de 128€</p>
-                  <i class="fa-solid fa-star"></i>                                                                                                                
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </figcaption>
-            </figure>
-            <figure class="card_populaires">
-                <img src="images/Images Booki/hebergements/4_small/eau.jpg" alt="Chambres d’hôtes Au cœur de l’eau" style="width:33%"><!-- todo  style="width:100%"> -->   
-                <figcaption class="container">
-                  <h3><b>Chambres d’hôtes Au cœur de l’eau</b></h3>
-                  <p>Nuit à partir de 71€</p>
-                  <i class="fa-solid fa-star"></i>                                                                                                                
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </figcaption>
-            </figure>
-            <figure class="card_populaires">
-                <img src="images/Images Booki/hebergements/4_small/blanc.jpg" alt="Hôtel Bleu et Blanc" style="width:33%">       <!-- todo  style="width:100%"> -->   
-                <figcaption class="container">
-                  <h3><b>Hôtel Bleu et Blanc</b></h3>
-                  <p>Nuit à partir de 68€</p>
-                  <i class="fa-solid fa-star"></i>                                                                                                                
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </figcaption>
-            </figure>
-        </article>
-    </section>
-    <section>
-        <h2>Activités à Marseille</h2>                                                                                           <!-- *  L'usage de article ne m'a pas paru pertient ici"> -->
-        <div>
-            <figure class="card_activités">
-                <img src="images\Images Booki\activites\3_medium/vieux-port.jpg" alt="Vieux-Port" style="width: 50%">            <!-- todo  style="width:100%"> -->   
-                <figcaption class="container">
-                  <h3><b>Vieux-Port</b></h3>
-                </figcaption>
-            </figure>
-            <figure class="card_activités">
-                <img src="images\Images Booki\activites\3_medium/pomègues.jpg" alt="Fort de Pomègues" style="width: 50%">        <!-- todo  style="width:100%"> -->   
-                <figcaption class="container">
-                  <h3><b>Fort de Pomègues</b></h3>
-                </figcaption>
-            </figure>
-            <figure class="card_activités">
-                <img src="images\Images Booki\activites\3_medium/Calanques.jpg" alt="Parc national des Calanques" style="width: 50%"><!-- todo  style="width:100%"> -->   
-                <figcaption class="container">
-                  <h3><b>Parc national des Calanques</b></h3>
-                </figcaption>
-            </figure>
-            <figure class="card_activités">
-                <img src="images\Images Booki\activites\3_medium/garde.jpg" alt="Notre-Dame-de-la-Garde" style="width: 50%">     <!-- todo  style="width:100%"> -->   
-                <figcaption class="container">
-                  <h3><b>Notre-Dame-de-la-Garde</b></h3>
-                </figcaption>
-            </figure>
-        </div>
-    </section>
-    <footer>
-        <h3>À propos</h3><br>                                                                                                    <!-- ? Indexation ?> --> 
+        </section>
+    </main>
+    <footer class ="gig_card footer">
+        <h3>À propos</h3><br>                                                                                                      
             <p>Fonctionnement du site</p><br>
             <p>Conditions générales</p><br> 
             <p>Données et confidentialité</p>

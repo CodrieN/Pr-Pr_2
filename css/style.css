@@ -3,7 +3,7 @@ selectors). */
 body {
     margin: 25px;
     background-color: rgb(240,240,240);
-    font-family: arial, sans-serif;
+    font-family: 'Raleway', sans-serif;;
     font-size: 14px;
   }
   
@@ -13,7 +13,8 @@ body {
     font-weight: normal;
     margin-top: 5px;
   }
-  
+  .ic_grey { color: #D9D9D9; }
+  .ic_blue { color: #0065FC; }
 
 
 
