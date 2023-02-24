@@ -1,33 +1,23 @@
 /* Applies to the entire body of the HTML document (except where overridden by more specific
 selectors). */
 body {
-  margin: 25px;
-  background-color: rgb(240, 240, 240);
+  max-width: 1440px;
+  margin: 55px;
+  background-color: rgb(255, 255, 255);
   font-family: 'Raleway', sans-serif;
-  ;
   font-size: 14px;
 }
 
-#logo{
-  width: 61.09px;  
-  height: auto;
-  flex: initial;
-  flex: auto;
-  flex: none;
-  flex: 1;
+#logo {
+  width: 61.09px;
+  height: 19px;
 }
 
-.nav{
-  flex: initial;
-  flex: auto;
-  flex: none;
-  flex: 1;
-}  
+.nav {}
 
 nav {
-display: flex;
-
-
+  justify-content: space-between;
+  display: flex;
 
 }
 
@@ -35,8 +25,83 @@ display: flex;
 h1 {
   font-size: 35px;
   font-weight: normal;
-  margin-top: 5px;
+  margin-top: 63px;
 }
+
+form {
+  display: flex;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#ic_pin {
+  padding: 15px;
+  background-color: #D9D9D9;
+  border: 1px solid #F2F2F2;
+  border-radius: 15px 0px 0px 15px;
+}
+
+#emplaement {
+  border: 1px;
+  border-radius: 0px;
+}
+
+.full_blue {
+  background-color: #0065FC;
+  color: #ffffff;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 16px;
+  gap: 10px;
+
+
+  width: 132px;
+  height: 49px;
+  left: 341px;
+  top: 199px;
+
+  /* Blue */
+
+  background: #0065FC;
+  /* Blue */
+
+  border: 1px solid #0065FC;
+  border-radius: 0px 15px 15px 0px;
+
+}
+
+#filtre {
+
+  display: flex;
+  flex-direction: row;
+}
+
+.Filtre_btn {
+  box-sizing: border-box;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  /* Grey/Tint2 */
+
+  border: 2px solid #D9D9D9;
+  border-radius: 25px;
+}
+
+
+
+
+
+
+
 
 .ic_grey {
   color: #D9D9D9;
