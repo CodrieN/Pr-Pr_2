@@ -1,20 +1,50 @@
 /* Applies to the entire body of the HTML document (except where overridden by more specific
 selectors). */
 body {
-    margin: 25px;
-    background-color: rgb(240,240,240);
-    font-family: 'Raleway', sans-serif;;
-    font-size: 14px;
-  }
-  
-  /* Applies to all <h1>...</h1> elements. */
-  h1 {
-    font-size: 35px;
-    font-weight: normal;
-    margin-top: 5px;
-  }
-  .ic_grey { color: #D9D9D9; }
-  .ic_blue { color: #0065FC; }
+  margin: 25px;
+  background-color: rgb(240, 240, 240);
+  font-family: 'Raleway', sans-serif;
+  ;
+  font-size: 14px;
+}
+
+#logo{
+  width: 61.09px;  
+  height: auto;
+  flex: initial;
+  flex: auto;
+  flex: none;
+  flex: 1;
+}
+
+.nav{
+  flex: initial;
+  flex: auto;
+  flex: none;
+  flex: 1;
+}  
+
+nav {
+display: flex;
+
+
+
+}
+
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.ic_grey {
+  color: #D9D9D9;
+}
+
+.ic_blue {
+  color: #0065FC;
+}
 
 
 
@@ -41,9 +71,13 @@ body {
 
 
 
-  
-  /* Applies to all elements with <... class="someclass"> specified. */
-  .someclass { color: red; }
-  
-  /* Applies to the element with <... id="someid"> specified. */
-  #someid { color: green; } 
+
+/* Applies to all elements with <... class="someclass"> specified. */
+.someclass {
+  color: red;
+}
+
+/* Applies to the element with <... id="someid"> specified. */
+#someid {
+  color: green;
+}
