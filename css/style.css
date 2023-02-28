@@ -5,30 +5,54 @@ body {
   margin: 55px;
   background-color: rgb(255, 255, 255);
   font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  border: 1px solid blu;
+}
+
+nav {
+  justify-content: space-between;
+  display: flex;
+  border: 1px solid blu;
 }
 
 #logo {
   width: 61.09px;
   height: 19px;
+  border: 1px solid blu;
 }
 
-.nav {}
-
-nav {
-  justify-content: space-between;
-  display: flex;
-
+.nav {
+  border: 1px solid blu;
+  text-decoration: none;
+  color: black;
 }
 
-/* Applies to all <h1>...</h1> elements. */
+.nav:hover {
+  color: #0065FC;
+  border-top: 10px #0065FC;
+}
+
 h1 {
-  font-size: 35px;
-  font-weight: normal;
+  width: 575px;
+  height: 26px;
+  left: 55px;
+  top: 126px;
+
+  font-weight: bold;
+  font-size: 22px; 
+  line-height: 26px;
   margin-top: 63px;
 }
 
+#premier_paragraphe {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 form {
+  align-items: stretch;
   display: flex;
   cursor: pointer;
   border: none;
@@ -40,28 +64,24 @@ form {
 #ic_pin {
   padding: 15px;
   background-color: #D9D9D9;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #D9D9D9;
   border-radius: 15px 0px 0px 15px;
 }
 
-#emplaement {
+#emplacement {
   border: 1px;
   border-radius: 0px;
+  border: 1px solid #D9D9D9;
 }
 
 .full_blue {
   background-color: #0065FC;
   color: #ffffff;
-
-  /* Auto layout */
-
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 15px 16px;
   gap: 10px;
-
-
   width: 132px;
   height: 49px;
   left: 341px;
@@ -70,17 +90,21 @@ form {
   /* Blue */
 
   background: #0065FC;
-  /* Blue */
-
   border: 1px solid #0065FC;
   border-radius: 0px 15px 15px 0px;
 
 }
 
 #filtre {
-
+  align-content: start;
   display: flex;
   flex-direction: row;
+  gap: 50px;
+
+}
+
+#filtres {
+  font-weight: bold;
 }
 
 .Filtre_btn {
@@ -89,10 +113,10 @@ form {
   right: 0%;
   top: 0%;
   bottom: 0%;
-
-  /* Grey/Tint2 */
-
+  padding-inline: 20px;
   border: 2px solid #D9D9D9;
+  background-color: white;
+
   border-radius: 25px;
 }
 
