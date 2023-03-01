@@ -36,7 +36,8 @@ nav {
 .nav:hover {
   border: #0065FC;
   /* *supposé être 2px */
-  border-top: 3px solid blue;
+  border-top: 3px solid #0065FC;
+  color: #0065FC;
 }
 
 
@@ -70,7 +71,7 @@ form {
   margin: 4px 2px;
 }
 
-form > * {
+form>* {
   cursor: pointer;
 }
 
@@ -144,20 +145,13 @@ form > * {
 
 /* ! -------------------- SECTIONS --------------------------- */
 
-
-
-
-
-section > * {
-  text-decoration: none;
-}
-
 #sec12 {
   display: flex;
   justify-content: space-between;
   gap: 50px;
-
+  background-color: blueviolet;
 }
+
 
 .big_card {
   padding: 25px;
@@ -168,23 +162,61 @@ section > * {
 }
 
 #section1 {
-  width: 75%;
+  background-color: aqua;
+}
+
+.grille {
+  padding: 2rem;
+  gap: 2rem;
   columns: 3;
+  text-decoration: none;
+  color: black;
+}
+
+#marseille {
+  background-color: red;
+  flex-grow: 100%;
+}
+
+.card_hotel1 {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  gap: 1rem;
+  border: 1px solid blue;
+  border-radius: 20px 20px 20px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.container{
+  text-decoration: none;
+  color: black;
 }
 
 #section2 {
+  background-color: yellowgreen;
+  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .img {
+  display: flex;
+  flex-direction: column;
   object-fit: cover;
-  width: 30%;
-  height: 250px;
+  width: 70%;
+  height: fit-content;
+  border-radius: 20px 20px 0px 0px;
 }
 
-.card_hotel {
+
+
+.card_hotel2 {
   background-color: white;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   padding: 1rem;
   gap: 1rem;
@@ -193,10 +225,13 @@ section > * {
 
 }
 
+#section3>* {
+  display: flex 1;
+}
 
 
 
-/* ! -------------------- SECTIONS -
+
 
 
 
