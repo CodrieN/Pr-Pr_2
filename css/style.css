@@ -1,11 +1,17 @@
-/* Applies to the entire body of the HTML document (except where overridden by more specific
-selectors). */
 body {
   max-width: 1440px;
   margin: 55px;
   background-color: rgb(255, 255, 255);
   font-family: 'Raleway', sans-serif;
   border: 1px solid blu;
+}
+
+.ic_grey {
+  color: #D9D9D9;
+}
+
+.ic_blue {
+  color: #0065FC;
 }
 
 nav {
@@ -21,26 +27,29 @@ nav {
 }
 
 .nav {
-  border: 1px solid blu;
   text-decoration: none;
   color: black;
+  /* *supposé être 55px */
+  padding: 53px;
 }
 
 .nav:hover {
-  color: #0065FC;
-  border-top: 10px #0065FC;
+  border: #0065FC;
+  /* *supposé être 2px */
+  border-top: 3px solid blue;
 }
+
 
 h1 {
   width: 575px;
   height: 26px;
   left: 55px;
   top: 126px;
-
   font-weight: bold;
-  font-size: 22px; 
+  font-size: 22px;
   line-height: 26px;
   margin-top: 63px;
+  margin-bottom: -10px;
 }
 
 #premier_paragraphe {
@@ -52,26 +61,35 @@ h1 {
 }
 
 form {
+  width: 372px;
   align-items: stretch;
   display: flex;
   cursor: pointer;
   border: none;
   font-size: 16px;
   margin: 4px 2px;
+}
+
+form > * {
   cursor: pointer;
 }
 
 #ic_pin {
   padding: 15px;
   background-color: #D9D9D9;
-  border: 1px solid #D9D9D9;
+  border: 2px solid #D9D9D9;
   border-radius: 15px 0px 0px 15px;
+
 }
 
 #emplacement {
   border: 1px;
   border-radius: 0px;
   border: 1px solid #D9D9D9;
+  font-style: bolder;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .full_blue {
@@ -79,94 +97,117 @@ form {
   color: #ffffff;
   display: flex;
   flex-direction: row;
-  align-items: center;
   padding: 15px 16px;
-  gap: 10px;
-  width: 132px;
   height: 49px;
   left: 341px;
   top: 199px;
-
-  /* Blue */
-
   background: #0065FC;
-  border: 1px solid #0065FC;
+  border: 2px solid #0065FC;
   border-radius: 0px 15px 15px 0px;
-
-}
-
-#filtre {
-  align-content: start;
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-
 }
 
 #filtres {
   font-weight: bold;
 }
 
+#filtre {
+  display: flex;
+  gap: 30px;
+  padding-top: 2%;
+  font-weight: bold;
+}
+
 .Filtre_btn {
-  box-sizing: border-box;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  padding-inline: 20px;
+  padding-inline: 30px;
   border: 2px solid #D9D9D9;
   background-color: white;
-
   border-radius: 25px;
 }
 
-
-
-
-
-
-
-
-.ic_grey {
-  color: #D9D9D9;
-}
-
-.ic_blue {
-  color: #0065FC;
+.Filtre_btn:hover {
+  background-color: #DEEBFF;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Applies to all elements with <... class="someclass"> specified. */
-.someclass {
-  color: red;
+#info {
+  border: 1px solid #D9D9D9;
+  border-spacing: 24px;
+  padding: 10px;
+  border-radius: 20px 20px 20px 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-/* Applies to the element with <... id="someid"> specified. */
-#someid {
-  color: green;
+
+
+
+
+/* ! -------------------- SECTIONS --------------------------- */
+
+
+
+
+
+section > * {
+  text-decoration: none;
+}
+
+#sec12 {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+
+}
+
+.big_card {
+  padding: 25px;
+  background-color: #D9D9D9;
+  border-radius: 20px 20px 20px 20px;
+  gap: 1rem;
+
+}
+
+#section1 {
+  width: 75%;
+}
+
+#section2 {
+  flex-direction: column;
+}
+
+.img {
+  object-fit: cover;
+  width: 30%;
+  height: 250px;
+}
+
+.card_hotel {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  gap: 1rem;
+  border: 1px solid blue;
+  border-radius: 20px 20px 20px 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  display: flex;
+
+}
+
+.div_footer {
+  flex: 1;
+  justify-content: space-around;
 }
