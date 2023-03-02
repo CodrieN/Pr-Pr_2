@@ -1,8 +1,13 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 1440px;
   margin: 55px;
   background-color: rgb(255, 255, 255);
   font-family: 'Raleway', sans-serif;
+
 }
 
 .ic_grey {
