@@ -155,13 +155,12 @@ form>* {
 #sec12 {
   display: flex;
   justify-content: space-between;
-  gap: 142px;
-  background-color: blueviolet;
+  gap: 40px;
 }
 
 
 #section1 {
-  padding: 9px;
+  padding: 55px;
   background-color: #D9D9D9;
   width: 70%;
   border-radius: 20px 20px 20px 20px;
@@ -178,79 +177,94 @@ form>* {
   object-fit: cover;
 }
 
-#marseille {}
+#marseille {
+}
 
 .grille {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   object-fit: cover;
 
 }
 
 .card_hotel1 {
-  align-content: flex-start;
   width: 246px;
+  height: auto;
   background-color: white;
   margin: 1rem;
   padding: 5px;
   border-radius: 20px;
 }
 
-.container >*{
+.container{
+  padding: 0.5em;
+}
+
+.container>* {
   display: flex;
   line-height: 0.1em;
 }
 
 
-/*
+
 
 #section2 {
-  background-color: yellowgreen;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 9px;
+  background-color: #D9D9D9;
+  width: 30%;
+  border-radius: 20px 20px 20px 20px;
+  gap: 1rem;
 }
-
-.img {
-  display: flex;
-  flex-direction: column;
-  object-fit: cover;
-  width: 70%;
-  height: 124px;
-  border-radius: 20px 20px 0px 0px;
-}
-
-
 
 .card_hotel2 {
-  background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 1rem;
-  gap: 1rem;
-  border: 1px solid blue;
-  border-radius: 20px 20px 20px 20px;
+  width: 343px;
+  height: auto;
+  background-color: white;
+  margin: 1rem;
+  padding: 5px;
+  border-radius: 20px;
 
 }
+
+.container2{
+  padding: 0.5em;
+  flex-direction: column;
+}
+
+
 
 #section3>* {
-  display: flex 1;
+  columns: 4;
+  flex-wrap: nowrap;
 }
 
+.img2 {
+  height: 389px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+/*
 
-*/
+
+
 
 
 
 
 .footer {
   display: flex;
-
+  background-color: #D9D9D9;
+  padding: 3rem;
 }
 
 .div_footer {
   flex: 1;
-  justify-content: space-around;
+  border: 1px solid black;
+  align-items: end;
+  line-height: 0.1em;
 }
