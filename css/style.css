@@ -124,7 +124,7 @@ form>* {
   background-color: white;
   border-radius: 25px;
   font-weight: bold;
-  
+
 }
 
 .Filtre_btn:hover {
@@ -135,10 +135,10 @@ form>* {
 #info {
   border: 1px solid #D9D9D9;
   border-spacing: 24px;
-  padding: 10px;
+  padding: 7px;
   border-radius: 20px 20px 20px 20px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 
@@ -189,6 +189,7 @@ form>* {
   margin: 1rem;
   padding: 5px;
   border-radius: 20px;
+  box-shadow: 10px 5px 50px 0.2px rgb(128, 128, 128);
 }
 
 .container {
@@ -213,13 +214,14 @@ form>* {
 
 .card_hotel2 {
   display: flex;
-  flex-direction: column;
+  /* ? flex-direction: column; */
   width: 343px;
   height: auto;
   background-color: white;
   margin: 1rem;
   padding: 5px;
   border-radius: 20px;
+  box-shadow: 10px 5px 50px 0.2px rgb(128, 128, 128);
 
 }
 
@@ -231,26 +233,33 @@ form>* {
 
 
 #section3>* {
+  columns: 4;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 0.1rem;
+
 }
+
+
 
 .img2 {
   height: 389px;
-  width: 100%;
+  width: 300px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  border: 1px solid black;
 }
 
-
-
+.card_activités {
+  border-radius: 20px;
+  box-shadow: 10px 25px 50px 0.2px rgb(128, 128, 128);
+}
 
 
 
 
 
 .footer {
+  margin-top: 50px;
   display: flex;
   background-color: #D9D9D9;
   padding: 3rem;
@@ -258,7 +267,5 @@ form>* {
 
 .div_footer {
   flex: 1;
-  border: 1px solid black;
-  align-items: end;
-  line-height: 0.1em;
+  align-items: start;
 }
