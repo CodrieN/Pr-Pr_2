@@ -3,7 +3,6 @@ body {
   margin: 55px;
   background-color: rgb(255, 255, 255);
   font-family: 'Raleway', sans-serif;
-  border: 1px solid blu;
 }
 
 .ic_grey {
@@ -20,22 +19,19 @@ a {
   color: black;
 }
 
+header {}
 
 nav {
   justify-content: space-between;
   display: flex;
-  border: 1px solid blu;
 }
 
 #logo {
   width: 61.09px;
   height: 19px;
-  border: 1px solid blu;
 }
 
 .nav {
-  text-decoration: none;
-  color: black;
   /* *supposé être 55px */
   padding: 53px;
 }
@@ -49,12 +45,8 @@ nav {
 
 
 h1 {
-  width: 575px;
-  height: 26px;
-  left: 55px;
-  top: 126px;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
   margin-top: 63px;
   margin-bottom: -10px;
@@ -63,8 +55,7 @@ h1 {
 #premier_paragraphe {
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
 }
 
@@ -94,23 +85,26 @@ form>* {
   border: 1px;
   border-radius: 0px;
   border: 1px solid #D9D9D9;
-  font-style: bolder;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 16px;
   line-height: 19px;
+  width: 200px;
+  outline: none;
 }
+
+
+#emplacement:onclick {
+  font-size: 0;
+}
+
 
 .full_blue {
   background-color: #0065FC;
   color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  padding: 15px 16px;
   height: 49px;
   left: 341px;
   top: 199px;
-  background: #0065FC;
-  border: 2px solid #0065FC;
+  border: 10px solid #0065FC;
   border-radius: 0px 15px 15px 0px;
 }
 
@@ -122,14 +116,15 @@ form>* {
   display: flex;
   gap: 30px;
   padding-top: 2%;
-  font-weight: bold;
 }
 
 .Filtre_btn {
-  padding-inline: 30px;
+  padding-inline: 15px;
   border: 2px solid #D9D9D9;
   background-color: white;
   border-radius: 25px;
+  font-weight: bold;
+  
 }
 
 .Filtre_btn:hover {
@@ -177,8 +172,7 @@ form>* {
   object-fit: cover;
 }
 
-#marseille {
-}
+#marseille {}
 
 .grille {
   display: flex;
@@ -197,7 +191,7 @@ form>* {
   border-radius: 20px;
 }
 
-.container{
+.container {
   padding: 0.5em;
 }
 
@@ -229,7 +223,7 @@ form>* {
 
 }
 
-.container2{
+.container2 {
   padding: 0.5em;
   flex-direction: column;
 }
@@ -237,8 +231,8 @@ form>* {
 
 
 #section3>* {
-  columns: 4;
-  flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .img2 {
@@ -248,7 +242,7 @@ form>* {
   object-fit: cover;
   border: 1px solid black;
 }
-/*
+
 
 
 
