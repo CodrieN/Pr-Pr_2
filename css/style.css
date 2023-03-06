@@ -147,25 +147,28 @@ form>* {
   padding-right: 12px;
 }
 
+.cinqcent {
 
+  margin-block: 32px;
+}
 
-
-
-/* ! -------------------- SECTIONS --------------------------- */
+/* ! --------------------------------------------- SECTIONS ----------------------------------------------------------------------------------- */
 
 #sec12 {
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  max-height: 700px;
 }
 
 
+/* ! -------------------------section 1----------------------------------*/
 #section1 {
   padding-inline: 40px;
   background-color: #F2F2F2;
   width: 70%;
-  border-radius: 20px 20px 20px 20px;
-  gap: 1rem;
+  border-radius: 20px;
+  height: 700px;
 }
 
 .img {
@@ -184,7 +187,6 @@ form>* {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  object-fit: cover;
 }
 
 .card_hotel1 {
@@ -223,58 +225,118 @@ form>* {
   width: 12px;
 }
 
+
+
+/* ! -------------------------section 2----------------------------------*/
+
 #section2 {
-  padding: 9px;
+
+  padding-inline: 40px;
   background-color: #F2F2F2;
   width: 30%;
-  border-radius: 20px 20px 20px 20px;
-  gap: 1rem;
+  border-radius: 20px;
+  height: 700px;
+}
+
+#section2 h2 {
+  margin-block: 40px;
+}
+
+section header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img2 {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+  object-fit: cover;
+  margin: 0%;
 }
 
 .card_hotel2 {
-  width: auto;
-  height: 30%;
+  height: 150px;
+  display: flex;
   background-color: white;
-  margin: 1rem;
   padding: 5px;
   border-radius: 20px;
   box-shadow: 8px 8px 122px -46.8px rgb(128 128 128);
+  font-size: smaller;
+}
 
+.grille2 {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.grille2 article {
+  display: flex;
+  columns: 2;
+  display: contents;
 }
 
 .container2 {
   padding: 0.5em;
-  flex-direction: column;
-}
-
-
-
-#section3>* {
-  columns: 4;
   display: flex;
-  justify-content: center;
-  gap: 0.1rem;
-
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.container2 h3 {
+  margin: 0;
+}
 
+.star2 {
+  font-size: smaller;
+}
 
-.img2 {
-  height: 389px;
-  width: 300px;
-  border-radius: 20px 20px 0px 0px;
-  object-fit: cover;
+/* ! -------------------------section 3----------------------------------*/
+
+#section3 {
+  gap: 0.1rem;
+}
+
+#section3 figcaption {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+#grille3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#grille3 a {
+  display: block;
+  width: 22%;
 }
 
 .card_activités {
+width: 100%;
+  margin-inline: 0%;
   border-radius: 20px;
   box-shadow: 8px 8px 122px -46.8px rgb(128 128 128);
 }
 
+.img3 {
+  height: 389px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
 
 
 
 
+
+
+/* ! -------------------------  footer  ----------------------------------*/
 .footer {
   margin-top: 50px;
   display: flex;
@@ -283,6 +345,25 @@ form>* {
 }
 
 .div_footer {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   align-items: start;
+}
+
+.div_footer a {
+  padding-block: 15px;
+}
+
+
+@media only screen and (max-width: 992px) {
+  #sec12 {
+    flex-direction: column;
+    max-height: initial;
+  }
+
+  #section1,
+  #section2 {
+    width: 100%;
+  }
 }
