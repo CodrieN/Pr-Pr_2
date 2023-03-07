@@ -158,7 +158,7 @@ form>* {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  max-height: 700px;
+  max-height: 660px;
 }
 
 
@@ -168,7 +168,7 @@ form>* {
   background-color: #F2F2F2;
   width: 70%;
   border-radius: 20px;
-  height: 700px;
+  height: 660px;
 }
 
 .img {
@@ -235,7 +235,6 @@ form>* {
   background-color: #F2F2F2;
   width: 30%;
   border-radius: 20px;
-  height: 700px;
 }
 
 #section2 h2 {
@@ -270,7 +269,7 @@ section header {
 .grille2 {
   display: flex;
   flex-direction: column;
-  gap: 55px;
+  gap: 20px;
 }
 
 .grille2 article {
@@ -318,14 +317,14 @@ section header {
 }
 
 .card_activités {
-width: 100%;
+  width: 100%;
   margin-inline: 0%;
   border-radius: 20px;
   box-shadow: 8px 8px 122px -46.8px rgb(128 128 128);
 }
 
 .img3 {
-  height: 389px;
+  height: auto;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
@@ -357,13 +356,62 @@ width: 100%;
 
 
 @media only screen and (max-width: 992px) {
+
+  #filtres {
+    font-size: 15px;
+  }
+
+  #filtre {
+    gap: 10px
+  }
+
+  .Filtre_btn {
+    padding-inline: 20px;
+    font-size: 15px;
+  }
+
   #sec12 {
     flex-direction: column;
     max-height: initial;
   }
 
+  #section1 {
+    height: 610px;
+  }
+
   #section1,
   #section2 {
     width: 100%;
+    padding-inline: 20px;
   }
+
+  #section1 h2,
+  #section2 h2{
+  margin-block: 20px;
+  font-size:large;
+}
+
+#section2 {
+  height: 210px;
+}
+
+  .card_hotel2{
+    height: 115px;
+    width: 33%;
+  }
+
+  .grille2{
+    flex-direction: row;
+  }
+  .grille2 h3,p {
+    font-size: smaller;
+
+  }
+  #section3 h2{
+    margin-top: 50px;
+    font-size: initial;
+  }
+.card_activités{
+  height: 215px;
+}
 }
