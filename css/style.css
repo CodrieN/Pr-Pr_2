@@ -296,7 +296,20 @@ section header {
 /* ! -------------------------section 3----------------------------------*/
 
 #section3 {
-  gap: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#grille3 {
+  display: flex;
+  justify-content: space-between;
+  height: 450px;
+}
+
+#grille3 a {
+  width: 22%;
+height: 450px;
 }
 
 #section3 figcaption {
@@ -305,18 +318,9 @@ section header {
   font-weight: bold;
 }
 
-#grille3 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-#grille3 a {
-  display: block;
-  width: 22%;
-}
-
 .card_activités {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin-inline: 0%;
   border-radius: 20px;
@@ -324,15 +328,15 @@ section header {
 }
 
 .img3 {
-  height: auto;
+  height: 350px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
-
-
-
+.container3 {
+padding: 15px;
+}
 
 
 /* ! -------------------------  footer  ----------------------------------*/
@@ -386,32 +390,56 @@ section header {
   }
 
   #section1 h2,
-  #section2 h2{
-  margin-block: 20px;
-  font-size:large;
-}
+  #section2 h2 {
+    margin-block: 20px;
+    font-size: large;
+  }
 
-#section2 {
-  height: 210px;
-}
+  #section2 {
+    height: 210px;
+  }
 
-  .card_hotel2{
+  .card_hotel2 {
     height: 115px;
     width: 33%;
   }
 
-  .grille2{
+  .grille2 {
     flex-direction: row;
   }
-  .grille2 h3,p {
+
+  .grille2 h3,
+  p {
     font-size: smaller;
 
   }
-  #section3 h2{
+
+  #section3 h2 {
     margin-top: 50px;
     font-size: initial;
   }
-.card_activités{
-  height: 215px;
-}
+
+  #grille3 {
+    height: 250px;
+  }
+
+  .card_activités {
+    height: 202x;
+  }
+  .img3{
+    height: 150px;
+  }
+
+  .container3{
+    font-size: small;
+  }
+
+  .div_footer a{
+    font-size: small;
+    padding-block: 5px;
+  }
+  
+  .div_footer h4{
+    margin-block: 15px;
+  }
 }
