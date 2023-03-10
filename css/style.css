@@ -143,12 +143,16 @@ form>* {
 
 
 #info {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   font-size: smaller;
   border: 1px solid #F2F2F2;
-  padding: 7px;
-  border-radius: 20px;
-  padding-left: 12px;
-  padding-right: 12px;
+  border-radius: 100%;
+  margin-right: 5px;
 }
 
 .cinqcent {
@@ -428,7 +432,7 @@ section header {
   }
 
   .card_activités {
-    height: 202x;
+    height: auto;
   }
 
   .img3 {
@@ -448,7 +452,6 @@ section header {
     margin-block: 15px;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
 
@@ -475,12 +478,8 @@ section header {
 
   nav div {
     display: flex;
-    width: -webkit-fill-available;
     justify-content: space-around;
-  }
-
-  #idnav {
-    padding-inline: -10px;
+    width: 100%;
   }
 
   #logo {
@@ -534,20 +533,27 @@ section header {
   }
 
   #filtre {
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
   }
 
-  #Filtre_btn {
-    width: 50%;
-    padding-inline: 13px;
-    padding-block: 13px;
-    font-size: 9px;
+  #filtres {
+    width: 100%;
   }
 
-  #Filtre_btn i {
+  .Filtre_btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 47%;
+    font-size: 10px;
+    height: 45px;
+    padding-inline: 10px;
+  }
+
+  .Filtre_btn i {
     font-size: 17px;
+    margin-right: 5px;
+    margin-right: 6px;
   }
 
   .cinqcent i {
@@ -621,7 +627,7 @@ section header {
     width: 100%;
   }
 
-  footer{
+  footer {
     flex-direction: column;
   }
 }
