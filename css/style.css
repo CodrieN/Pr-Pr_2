@@ -73,6 +73,7 @@ h1 {
 #premier_paragraphe {
   font-family: 'Raleway';
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 form {
@@ -119,7 +120,7 @@ form>* {
 #filtres {
   font-weight: bold;
   margin-block: 12px;
-  font-size: 21px;
+  font-size: 17px;
 }
 
 #filtre {
@@ -129,12 +130,17 @@ form>* {
 }
 
 .Filtre_btn {
-  padding-inline: 28px;
+  padding-inline: 25px;
+  margin-inline: 10px;
   border: 3px solid #F2F2F2;
   background-color: white;
   border-radius: 25px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
+}
+
+.Filtre_btn i{
+  padding-right: 5px;
 }
 
 .Filtre_btn:hover {
@@ -165,18 +171,18 @@ form>* {
 #sec12 {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 23px;
   max-height: 660px;
 }
 
 
 /* ! -------------------------section 1----------------------------------*/
 #section1 {
-  padding-inline: 40px;
+  padding-inline: 23px;
   background-color: #F2F2F2;
   width: 70%;
   border-radius: 20px;
-  height: 660px;
+  height: 645px;
 }
 
 .img {
@@ -199,8 +205,8 @@ form>* {
 
 .card_hotel1 {
   font-size: small;
-  width: 31%;
-  margin-bottom: 35px;
+  width: 31.4%;
+  margin-bottom: 32px;
   height: auto;
   background-color: white;
   padding: 5px;
@@ -239,7 +245,7 @@ form>* {
 
 #section2 {
 
-  padding-inline: 40px;
+  padding-inline: 23px;
   background-color: #F2F2F2;
   width: 30%;
   border-radius: 20px;
@@ -277,7 +283,7 @@ section header {
 .grille2 {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 28px;
 }
 
 .grille2 article {
@@ -307,6 +313,10 @@ section header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+#section3 h2 {
+  margin-top: 50px;
 }
 
 #grille3 {
@@ -379,7 +389,7 @@ section header {
 
   .Filtre_btn {
     padding-inline: 20px;
-    font-size: 15px;
+    font-size: 11px;
   }
 
   #sec12 {
@@ -436,7 +446,7 @@ section header {
   }
 
   .img3 {
-    height: 150px;
+    height: 190px;
   }
 
   .container3 {
@@ -465,7 +475,7 @@ section header {
   #filtre,
   .cinqcent,
   #section3 {
-    padding-inline: 20px;
+    padding-inline: 15px;
   }
 
 
@@ -544,8 +554,8 @@ section header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 47%;
-    font-size: 10px;
+    width: 42%;
+    font-size: 9px;
     height: 45px;
     padding-inline: 10px;
   }
@@ -562,7 +572,7 @@ section header {
 
   .cinqcent {
     display: flex;
-    font-size: large;
+    font-size: medium;
   }
 
   #sec12 {
@@ -619,14 +629,16 @@ section header {
   #grille3 {
     flex-direction: column;
     align-items: center;
-    height: 910px;
+    height: 850px;
     flex-wrap: nowrap;
   }
 
   #grille3 a {
     width: 100%;
   }
-
+.img3{
+  height: 130px;
+}
   footer {
     flex-direction: column;
   }
